@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset = "UTF-8">
+        <title>Project 2</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
+    <body>
+        <script>
+            var name = "laRry meYers";
+            var names = name.split(" ");
+            var fName = names[0].toLowerCase();
+            var lName = names[1].toLowerCase();
+            var firstLetter = fName.slice(0,1).toUpperCase();
+            var remaining = fName.slice(1);
+
+            fName = firstLetter.concat(remaining);
+            firstLetter = lName.slice(0,1).toUpperCase();
+            remaining = lName.slice(1);
+            lName = firstLetter.concat(remaining);
+            
+            var display = "<h3> Name = " + fName + " " + lName + "<h3>";
+            document.write(display);
+            
+        </script>
+    </body>
+</html>
