@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset = "UTF-8">
+        <title>String Methods</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
+    <body>
+        <script>
+            var str = "Learing javascript";
+            var ustr = str.toUpperCase();
+            var jstr;
+            console.log(ustr);
+
+            str = "Learning javascript to build websites and get a good job.";
+            ustr = str.replace("websites", "games");
+            console.log(ustr);
+
+            str = "Learning javascript";
+            ustr = str.split("");
+            console.log(ustr);
+
+            str = "Learning javascript";
+            ustr = str.split(" ");
+            console.log(ustr);
+            console.log(ustr[1]);       // javascript
+
+            jstr = ustr[0].concat(ustr[1]);
+            console.log(jstr);
+
+            ustr = str.slice(9,13);
+            console.log(ustr);
+        </script>
+    </body>
+</html>
