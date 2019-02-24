@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset = "UTF-8">
+        <title>Functions</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
+    <body>
+        <script>
+            // var a = 5;
+            // var b = 10;
+
+            // function aFunction() {
+            //     var c = a * b;
+            //     document.write(c);
+            //     document.write("<br>");
+            // }
+
+            // aFunction();
+
+            var score = 0;
+            var lives = 10;
+            var gameOver = false;
+
+            function liftLost() {
+                score = 0;
+                lives--;
+                gameOver = true;
+                document.write("<h2>Game Over, you have " + lives + " lives left</h2>");
+            }
+
+            liftLost();
+        </script>
+    </body>
+</html>

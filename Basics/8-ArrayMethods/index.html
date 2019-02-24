@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset = "UTF-8">
+        <title>Array Methods</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
+    <body>
+        <script>
+            var users = ["Me","Tom","Bill", 100];
+            document.writeln(users);
+            document.writeln("<br>");
+
+            users.push("Lila");
+            document.writeln(users);
+            document.writeln("<br>");
+
+            users.unshift("Sydney");
+            document.writeln(users);
+            document.writeln("<br>");
+
+            users.shift();
+            document.writeln(users);
+            document.writeln("<br>");
+
+            users.pop();
+            document.writeln(users);
+            document.writeln("<br>");
+
+            users.reverse();
+            document.writeln(users);
+            document.writeln("<br>");
+
+            var slice = users.slice(2,3);
+            document.writeln(slice);
+            document.writeln("<br>");
+
+        </script>
+    </body>
+</html>

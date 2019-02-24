@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset = "UTF-8">
+        <title>Objects</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
+    <body>
+        <script>
+            var phone = new Object();
+            phone["Manufacture"] = "Apple";
+            phone["Model"] = "iPhone";
+            phone["Color"] = "Silver";
+
+            console.log(phone);
+            console.log(phone["Model"]);
+
+            var phone1 = new Object();
+            phone1.Manufacture = "Apple";
+            phone1.Model = "iPhone";
+            phone1.Color = "Silver";
+
+            console.log(phone1);
+            console.log(phone1.Manufacture);
+        </script>
+    </body>
+</html>
