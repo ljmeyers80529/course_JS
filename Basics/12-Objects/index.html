@@ -22,6 +22,25 @@
 
             console.log(phone1);
             console.log(phone1.Manufacture);
+
+            var phone2 = {
+                Manufacture: "Apple",
+                Model: "iPhone",
+                Color: "Silver",
+                features: {
+                    bluetooth: true,
+                    wifi: true,
+                    gps: false
+                }
+            }
+            console.log(phone2);
+            console.log(phone2.features.gps);
+
+            function yourPhone() {
+                alert("Manufacture: " + phone2.Manufacture);
+            }
+
+            yourPhone();
         </script>
     </body>
 </html>
