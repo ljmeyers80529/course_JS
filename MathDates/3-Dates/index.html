@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset = "UTF-8">
+        <title>Dates</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
+    <body>
+        <script>
+
+            function dayOfYear() {
+                var now = new Date();
+                var start = new Date(now.getFullYear(), 0, 0);
+                var diff = now - start;
+                var oneDay = 1000 * 60 * 60 * 24;
+                var day = Math.floor(diff / oneDay);
+                return day;
+            }
+
+            
+            function dayOfYearX(now) {
+                var start = new Date(now.getFullYear(), 0, 0);
+                var diff = now - start;
+                var oneDay = 1000 * 60 * 60 * 24;
+                var day = Math.floor(diff / oneDay);
+                return day;
+            }
+
+
+            var sDate = new Date();
+            document.write(sDate + "<br>");
+
+            var dayOfMonth = sDate.getDate();
+            var dayOfWeek = sDate.getDay();
+            var month = sDate.getMonth();
+            var year = sDate.getFullYear();
+            var hours = sDate.getHours();
+            var minutes = sDate.getMinutes();
+            var seconds = sDate.getSeconds();
+            var yearDay = dayOfYear();
+
+            var display = "<h3>";
+            display += dayOfMonth + " - ";
+            display += dayOfWeek + " - ";
+            display += month + " - ";
+            display += year + " - ";
+            display += hours + " - ";
+            display += minutes + " - ";
+            display += seconds + " - ";
+            display += yearDay;
+            display += "</h3>";
+            document.write(display);
+
+            var stDate = new Date();
+            stDate.setMonth(6);
+            stDate.setFullYear(1961);
+            stDate.setDate(01);
+
+            dayOfMonth = stDate.getDate();
+            dayOfWeek = stDate.getDay();
+            month = stDate.getMonth();
+            year = stDate.getFullYear();
+            yearDay = dayOfYearX(stDate);
+
+            display = "<h3>";
+            display += dayOfMonth + " - ";
+            display += dayOfWeek + " - ";
+            display += month + " - ";
+            display += year + " - ";
+            display += hours + " - ";
+            display += minutes + " - ";
+            display += seconds + " - ";
+            display += yearDay;
+            display += "</h3>";
+            document.write(display);
+        </script>
+    </body>
+</html>
