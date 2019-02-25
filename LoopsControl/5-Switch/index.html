@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset = "UTF-8">
+        <title>Logical operators</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
+    <body>
+        <script>
+            var display = "<h2>";
+            var month = "August";
+
+            switch(month) {
+                case "Janurary": display += "Happy New Year";
+                break;
+                case "August":
+                case "June": display += "Start of Summer";
+                break;
+                case "July": display += "Happy 4th";
+                break;
+                case "December": display += "Merry Christmas";
+                break;
+                default: display += "Unknown";
+            }
+
+            display += "</h2>";
+            document.write(display);
+        </script>
+    </body>
+</html>
