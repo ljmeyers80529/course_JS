@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset = "UTF-8">
+        <title>Project 8</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+        <style>
+            body {
+                width: 100%;
+                text-align: center; 
+            }
+
+            #name {
+                font-size: 60px;
+                color: blue;
+            }
+        </style>
+    </head>
+    <body>
+        <p id="name">Jim Meyers</p>
+        <input type="button" class="btn btn-info" value="Big", onclick="document.getElementById('name').style.fontSize='100px';">
+        <input type="button" class="btn btn-info" value="Change Color", onclick="document.getElementById('name').style.color='green';">
+        <input type="button" class="btn btn-info" value="Capitals", onclick="document.getElementById('name').style.textTransform='uppercase';">
+        <input type="button" class="btn btn-info" value="Hide", onclick="document.getElementById('name').style.visibility='hidden';">
+        <input type="button" class="btn btn-info" value="Show", onclick="document.getElementById('name').style.visibility='visible';">
+    </body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset = "UTF-8">
+        <title>Manipulating Elements</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <style>
+            .red {
+                color: red;
+                font-size: 2em;
+            }
+            .blue {
+                color: blue;
+                font-size: 2em;
+            }
+            #id1 {
+                font-family: fantasy;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 id="title" class="red">Changing elements</h1>
+        <script>
+            // document.getElementById("title").style.color = "red";
+            // var cn = document.getElementById("title").className;
+            // document.getElementById("title").id = "id1";
+            // document.getElementById("title").className = "blue";
+
+            var newEle = document.createElement("div");
+            var addTxt = document.createTextNode("New text string.");
+            var newContent = document.getElementById("title");
+
+            newEle.appendChild(addTxt);
+            document.body.insertBefore(newEle, newContent);
+            newEle.id = "id1";
+            newEle.className = "blue";
+
+        </script>
+    </body>
+</html>

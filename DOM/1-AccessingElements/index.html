@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset = "UTF-8">
+        <title>Accessing Elements</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
+    <body>
+        <h1 id="title" class="heading"></h1>
+        <p class="first">First</p>
+        <p class="second">Second</p>
+        <p class="third">Third</p>
+        <img src="image1" alt="1">
+        <img src="image2" alt="2">
+        <img src="image3" alt="3">
+        <img src="image4" alt="4">
+
+        <script>
+            document.getElementById("title").innerHTML = "Javascript";
+            document.querySelector('.second').style.backgroundColor = "red";
+
+            var selector = document.getElementsByClassName('heading');
+            selector[0].innerHTML = "Selected element(s) by class name.";
+
+            selector = document.getElementsByTagName('p');
+            selector[1].innerHTML = "Selected element(s) by tag name.";
+
+            var numImg = document.images.length;
+            selector[2].innerHTML = "Number of images = " + numImg;       
+
+        </script>
+    </body>
+</html>
